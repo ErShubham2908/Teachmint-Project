@@ -43,7 +43,6 @@ function User() {
   return (
     <>  
         {post.map((item, index) =>{
-            console.log(item.postData.data);
             return(
                 <div key={index} className='user_parent'> 
                     <NavLink className='userLink' to={`/user/${item.id}`} state={{postData: item.postData.data, userData: user}} > 
