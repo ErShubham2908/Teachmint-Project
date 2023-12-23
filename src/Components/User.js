@@ -29,7 +29,6 @@ function User() {
                         name:userItem.name, 
                         username : userItem.username,
                         postData : postData
-
                     };
                 })
             );
@@ -41,7 +40,6 @@ function User() {
         }
     }, [user]);
 
-    console.log("user",user);
   return (
     <>  
         {post.map((item, index) =>{

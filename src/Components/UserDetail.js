@@ -6,8 +6,7 @@ import Clock from "./Clock";
 
 function UserDetail() {
     const Navigate = useNavigate("");
-    const { postData, userData } = useLocation().state;
-    console.log(userData);
+    const { postData} = useLocation().state;
 
     return (
         <div className="container">
