@@ -23,7 +23,7 @@ const Clock = () => {
 
     return () => clearInterval(intervalId); // Cleanup interval on unmount
 
-  }, [isPaused]);
+  }, [isPaused, updateCurrentTime]);
 
   function updateCurrentTime() {
     if (selectedCountry) {
