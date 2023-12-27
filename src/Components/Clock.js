@@ -23,9 +23,9 @@ const Clock = () => {
 
     return () => clearInterval(intervalId); // Cleanup interval on unmount
 
-  });
+  }, [isPaused]);
 
-  const updateCurrentTime = () => {
+  function updateCurrentTime() {
     if (selectedCountry) {
       axios.get(`https://worldtimeapi.org/api/timezone/${selectedCountry}`)
         .then(response => setCurrentTime(new Date(response.data.utc_datetime)))
